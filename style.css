@@ -1,0 +1,122 @@
+:root {
+  --color-primary: #008069;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 475px;
+}
+
+/*Header*/
+header {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  position: sticky;
+  top: 0;
+}
+header .top-header {
+  padding: 2.12rem 1.12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-header h1 {
+  font-weight: 400;
+}
+header .top-header .icons ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header .top-header .icons ul li {
+  margin-right: 1.62rem;
+}
+header .top-header .icons ul li:last-child {
+  margin: 0;
+}
+header .top-header .icons ul li i {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.nav-header {
+  padding: 0px 1.12rem;
+}
+header .nav-header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-header ul li {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-bottom: 3px solid --color-primary;
+  display: block;
+  opacity: 0.8;
+  padding-bottom: 1rem;
+}
+header .nav-header ul li:hover {
+  border-bottom: 3px solid white;
+  border-color: white;
+  opacity: 1;
+}
+
+/*Main - messages*/
+main {
+  height: auto; /*144 SOMA BRUTA - HEADER*/
+  background-color: white;
+}
+
+.chat:first-child {
+  margin-top: 1.62rem;
+}
+.chat {
+  margin: 2.25rem 0.75rem;
+}
+.chat img {
+  float: left;
+  width: 50px;
+  height: 52px;
+  border-radius: 50%;
+  margin-right: 0.87rem;
+}
+.chat .top-chat {
+  display: flex;
+  justify-content: space-between;
+}
+.chat .top-chat h3 {
+  font-size: 18px;
+  color: rgb(15, 15, 15);
+}
+.chat .top-chat span {
+  color: #7e8388;
+  font-size: 0.81rem;
+}
+
+.chat .message-chat {
+  margin-top: 0.25rem;
+}
+
+.chat .message-chat p {
+  color: #737b7f;
+  font-size: 0.87rem;
+}
+.divimg {
+  float: left;
+  border-radius: 50%;
+  margin-right: 0.87rem;
+  background: #ccc;
+  width: 50px;
+  height: 52px;
+}
